@@ -1,20 +1,19 @@
-interface Example
+class Example
 {
-void show();
-void increment();
+	final void test()
+	{
+		System.out.println("test method in Example class");
+	}
 }
-class Example1 implements Example
+class FinalExmp2 extends Example
 {
-public static void main(String[] args)
-{
-public void increment()
-{
-
-System.out.println("increment");
-}
- public void show()
-{
-System.out.println("showing interface method impleentation");
- }
-}
+	void test()
+	{
+		System.out.println("test method in FinalExmp2 class");
+	}
+	public static void main(String[] args)
+	{
+		FinalExmp2 a=new FinalExmp2();
+		a.test();
+	}
 }
