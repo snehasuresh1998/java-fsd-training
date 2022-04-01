@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.card
+{
+    margin-top: 15px0;
+    border: 1px solid blue;
+    width: 500px;
+    padding: 45px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    background-color:lightgray;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: green;
+    text-align: center;
+    color:lightcoral;
+}

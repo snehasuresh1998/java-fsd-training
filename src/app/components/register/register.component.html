@@ -1,0 +1,20 @@
+<div  class="card" >
+    <div class ="col-md-6 offset-md-3 mt-4" class="center" >
+        <h3 class="col-md-6 offset-md-3 mt-4">Register</h3>
+        <form [formGroup]="register" >
+            
+            <div class="form-group">
+              <label >Username</label>
+              <input type="text" class="form-control"   placeholder="Enter username" formControlName="username"/> 
+              
+            </div>
+            <div class="form-group">
+              <label >Password</label>
+              <input type="password" class="form-control"  placeholder="Password" formControlName="password"/>
+            </div>
+            
+            <button  (click)="registerSubmit(register.value)"  style ="margin-right:16px" type="submit" class="btn btn-primary" >Register</button>
+            <button (click)="goToLogin()" style ="margin-right:16px" type="submit"class="btn btn-primary">Login  </button>
+          </form>
+    </div>
+</div>
